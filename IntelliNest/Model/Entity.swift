@@ -58,7 +58,7 @@ struct Entity: EntityProtocol {
         if let lastChangedString = try container.decodeIfPresent(String.self, forKey: .lastChanged),
            let lastChangedDate = dateFormatter.date(from: lastChangedString) {
             self.lastChanged = lastChangedDate
-            print("asdsad")
+            print("asd123123sad")
         } else {
             self.lastChanged = .distantPast
         }
