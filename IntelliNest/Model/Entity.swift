@@ -60,6 +60,7 @@ struct Entity: EntityProtocol {
             self.lastChanged = lastChangedDate
             print("asd123123sad")
         } else {
+            print("asd123123sad")
             self.lastChanged = .distantPast
         }
 

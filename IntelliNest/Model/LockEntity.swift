@@ -12,6 +12,7 @@ struct LockEntity: Lockable, EntityProtocol {
     var entityId: EntityId
     var id: LockID = .storageDoor
     var state: String { didSet {
+        print("asd123123sad")
         lockState = LockState(rawValue: state) ?? .unknown
         if lockState == expectedState || expectedStateIsOld {
             expectedState = .unknown
